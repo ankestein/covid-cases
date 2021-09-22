@@ -19,7 +19,7 @@ public class CovidCasesController {
     }
 
     @GetMapping
-public List<ConfirmedByDay> getConfirmedCases() {
+    public List<ConfirmedByDay> getConfirmedCases() {
         return covidCasesService.getConfirmedCases();
     }
 
