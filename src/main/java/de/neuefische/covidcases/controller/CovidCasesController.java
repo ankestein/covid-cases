@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("covid/cases")
 public class CovidCasesController {
 
-    private CovidCasesService covidCasesService;
+    private final CovidCasesService covidCasesService;
 
     public CovidCasesController(CovidCasesService covidCasesService) {
         this.covidCasesService = covidCasesService;

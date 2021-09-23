@@ -10,8 +10,8 @@ import java.util.List;
 @Service
 public class CovidCasesService {
 
-    private CovidApiService covidApiService;
-    private CovidCasesMapper covidCasesMapper;
+    private final CovidApiService covidApiService;
+    private final CovidCasesMapper covidCasesMapper;
 
     public CovidCasesService(CovidApiService covidApiService, CovidCasesMapper covidCasesMapper) {
         this.covidApiService = covidApiService;
